@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Executing Test Case:testSignUpNewUser()]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="181589" started-at="2016-10-18T09:37:26Z" finished-at="2016-10-18T09:40:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="181589" started-at="2016-10-18T09:37:26Z" finished-at="2016-10-18T09:40:28Z">
+      <class name="test.EFXSmokeSignUpTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:test.EFXSmokeSignUpTest@54f5493f]" name="setUp" is-config="true" duration-ms="19637" started-at="2016-10-18T15:07:26Z" finished-at="2016-10-18T15:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testSignUpNewUser()[pri:0, instance:test.EFXSmokeSignUpTest@54f5493f]" name="testSignUpNewUser" duration-ms="160228" started-at="2016-10-18T15:07:46Z" finished-at="2016-10-18T15:10:26Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[The given selector //input/[@type='tel'] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //input/[@type='tel'] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'HMECL000510', ip: '10.160.240.233', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+*** Element info: {Using=xpath, value=//input/[@type='tel']}
+Session ID: 1cf7877c-da7b-4e06-810a-3b8c11d02862
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //input/[@type='tel'] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //input/[@type='tel'] because of the following error:
+SyntaxError: The expression is not a legal expression.
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'HMECL000510', ip: '10.160.240.233', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+*** Element info: {Using=xpath, value=//input/[@type='tel']}
+Session ID: 1cf7877c-da7b-4e06-810a-3b8c11d02862
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=35.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at pageobject.PaymentPage.enterCreditCardNumber(PaymentPage.java:37)
+	at test.EFXSmokeSignUpTest.testSignUpNewUser(EFXSmokeSignUpTest.java:119)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.InvalidSelectorException: The given selector //input/[@type='tel'] is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //input/[@type='tel'] because of the following error:
+SyntaxError: The expression is not a legal expression.
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 16:57:40'
+System info: host: 'HMECL000510', ip: '10.160.240.233', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/balaji.m/AppData/Local/Temp/anonymous704628035596009523webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10744)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/balaji.m/AppData/Local/Temp/anonymous704628035596009523webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10775)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/balaji.m/AppData/Local/Temp/anonymous704628035596009523webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/balaji.m/AppData/Local/Temp/anonymous704628035596009523webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/balaji.m/AppData/Local/Temp/anonymous704628035596009523webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/balaji.m/AppData/Local/Temp/anonymous704628035596009523webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Executing Test Case:testSignUpNewUser()]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSignUpNewUser -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:test.EFXSmokeSignUpTest@54f5493f]" name="tearDown" is-config="true" duration-ms="1588" started-at="2016-10-18T15:10:26Z" finished-at="2016-10-18T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.EFXSmokeSignUpTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
